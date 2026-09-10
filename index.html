@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tempo - time tracking and invoicing for macOS</title>
+<meta name="description" content="A Mac app that tracks time against projects and turns it into invoices. No account, no subscription, and your data is a file you own.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <b>Tempo</b>
+    <span>Time tracking and invoicing for macOS</span>
+  </header>
+
+  <section class="hero narrow">
+    <h1>Track the work. Send the invoice. Keep the file.</h1>
+    <p class="lede">Tempo tracks time against projects and turns it into invoices you
+    can send. It runs on your Mac, it has no account to make, and everything it knows
+    is a file in a folder you chose.</p>
+
+    <div class="get">
+      <a class="download" href="Tempo-1.0.dmg">Download for macOS</a>
+      <small>
+        Free. 8.2 MB, macOS 14 or later.<br>
+        Apple silicon and Intel. Signed and notarised by Apple.
+      </small>
+    </div>
+  </section>
+
+  <section class="demo wide">
+    <h2>Start the clock, stop it, and it is on the timesheet</h2>
+    <figure>
+      <picture>
+        <source media="(prefers-reduced-motion: reduce)" srcset="tracking-time-still.png">
+        <img src="tracking-time.gif" width="1180" height="760"
+             alt="Starting the clock on a project from the Plan, stopping it, and finding the session on the Timesheet">
+      </picture>
+      <figcaption>Only one timer runs at a time, and starting a second stops the
+      first, so two clients can never be billed for the same hour.</figcaption>
+    </figure>
+  </section>
+
+  <section class="demo wide">
+    <h2>The hours arrive on the invoice already itemised</h2>
+    <figure>
+      <picture>
+        <source media="(prefers-reduced-motion: reduce)" srcset="raising-an-invoice-still.png">
+        <img src="raising-an-invoice.gif" width="1180" height="760"
+             alt="Opening a client, pressing Create invoice, and getting a draft whose line items are the tracked time">
+      </picture>
+      <figcaption>The notes you wrote while working become the detail under each line.
+      Billable expenses come along too, and once an invoice is saved that time is
+      marked as billed so it cannot go on the next one.</figcaption>
+    </figure>
+  </section>
+
+  <section class="claims">
+    <h2>What is actually true of it</h2>
+    <dl>
+      <div class="claim">
+        <dt>Your data is a file</dt>
+        <dd>One JSON document, in a folder you pick, readable in any text editor in
+        twenty years. Put it in iCloud Drive and a second Mac reads the same one.
+        Nothing is locked in and there is nothing to export.</dd>
+      </div>
+      <div class="claim">
+        <dt>No account</dt>
+        <dd>Nothing to sign up for, nothing to log in to, no subscription, and no
+        server that can go away and take your invoices with it.</dd>
+      </div>
+      <div class="claim">
+        <dt>It phones nowhere</dt>
+        <dd>Tempo makes no network requests at all. It can check once a day whether a
+        newer version exists, and that is off until you switch it on, sends no
+        identifier, and never downloads or installs anything by itself.</dd>
+      </div>
+      <div class="claim">
+        <dt>It reads, never writes</dt>
+        <dd>If you let it show today's meetings on the Plan, it only ever reads your
+        calendar. It never adds or changes anything in it, and it does not ask for
+        access until you turn that on.</dd>
+      </div>
+      <div class="claim">
+        <dt>Invoices are documents</dt>
+        <dd>An invoice keeps the tax rate, terms and payment link it was raised at, so
+        changing a default next year does not quietly rewrite last year's paperwork.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="facts">
+    <h2>What it does</h2>
+    <ul>
+      <li>Plan a day, track time against projects, and see the week on a timesheet.</li>
+      <li>Notes per project and day, with checkbox lines that become tasks.</li>
+      <li>Expenses, including mileage, repeating costs and receipts, with a CSV export.</li>
+      <li>Invoices from tracked time or priced up front, as PDFs, with reminders for
+      what is overdue.</li>
+      <li>A client view showing what is owed, what is unbilled, and what is waiting to
+      be recharged.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Tempo is made by Jacob Schwartz. Questions and bug reports:
+    <a href="mailto:contact@jacob.fyi">contact@jacob.fyi</a>.</p>
+    <p style="margin-top: var(--space-3)">It is free to use and provided as is, with no
+    warranty. It collects nothing about you and sends nothing anywhere.</p>
+  </footer>
+
+</div>
+</body>
+</html>

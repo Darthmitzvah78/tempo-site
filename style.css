@@ -1,0 +1,184 @@
+/* Tempo, the download page.
+ *
+ * Palette: vichy - near-white greys with one vivid teal (#05AD98), chosen
+ * because Tempo's own accent is a teal (#049886 light, #2bd4bd dark) and the
+ * screenshots are most of this page. A palette that disagreed with them would
+ * read as a different product.
+ *
+ * The palette block below is the only place a raw hex appears. Everything else
+ * derives from the semantic tokens, per 00-anti-defaults.md.
+ */
+
+:root {
+  /* --- vichy, from chart-kit/palettes.css, ratios are bg / surface --- */
+  --bg: #ffffff;
+  --surface: color-mix(in oklab, #bbbfbf 25%, white);
+  --text: #252525;
+  --text-muted: color-mix(in oklab, #878787 84%, black);  /* 5.41 / 4.69 */
+  --border: color-mix(in oklab, #bbbfbf 70%, white);      /* divider, 1.52 / 1.32 */
+  --border-strong: #878989;                                /* 3.52 / 3.05 */
+  --accent: #05ad98;
+  /* Ink for text sitting on the accent fill. In the palette block because
+     00-anti-defaults.md bans raw hex anywhere else. Measured, not guessed:
+     5.29:1 on the accent fill, which clears AA for normal text. The first
+     number written here was 8.86, from nowhere, and was wrong. */
+  --on-accent: #0d2c27;
+  --link: color-mix(in oklab, var(--accent) 77%, black);   /* 5.32 / 4.62 */
+  --focus-ring: var(--link);
+
+  --font-sans: "InterVariable", Inter, system-ui, sans-serif;
+
+  --step--1: clamp(0.833rem, 0.8rem + 0.16vw, 0.9rem);
+  --step-0:  clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --step-1:  clamp(1.2rem, 1.1rem + 0.5vw, 1.4rem);
+  --step-2:  clamp(1.44rem, 1.3rem + 0.9vw, 1.8rem);
+  --step-3:  clamp(1.73rem, 1.5rem + 1.4vw, 2.4rem);
+  --step-4:  clamp(2.07rem, 1.7rem + 2vw, 3.2rem);
+
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-6: 24px; --space-8: 32px; --space-12: 48px; --space-16: 64px;
+
+  --radius: 4px;
+  --radius-lg: 8px;
+  --shadow-sm: 0 1px 2px rgb(42 37 31 / 0.06);
+  --shadow-md: 0 4px 12px rgb(42 37 31 / 0.10);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-weight: 420;
+  font-optical-sizing: auto;
+  font-size: var(--step-0);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 { font-weight: 640; letter-spacing: -0.01em; line-height: 1.15; margin: 0; }
+p { margin: 0; max-width: 65ch; }
+
+a {
+  color: var(--link);
+  text-decoration: underline;          /* the token carries contrast, the
+                                          underline carries "not by colour alone" */
+  text-underline-offset: 2px;
+}
+a:focus-visible, .download:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* The shell.
+ *
+ * Not a centred max-width column: a named grid with a wide left column and a
+ * narrower right one, and a right margin that content is allowed to bleed into.
+ * 00-anti-defaults.md §4 bans the reflexive centred column and equal splits.
+ */
+.page {
+  display: grid;
+  grid-template-columns:
+    minmax(var(--space-6), 1fr)
+    minmax(0, 46rem)
+    minmax(0, 22rem)
+    minmax(var(--space-6), 1fr);
+  column-gap: var(--space-8);
+}
+.page > * { grid-column: 2 / 4; }
+.wide  { grid-column: 2 / 5; }        /* bleeds past the right edge */
+.narrow { grid-column: 2 / 3; }
+
+/* Vertical rhythm is deliberately uneven - tight masthead, generous hero,
+   close-packed facts, generous demos. */
+.masthead {
+  display: flex; align-items: baseline; gap: var(--space-3);
+  padding: var(--space-6) 0 0;
+}
+.masthead b { font-weight: 640; font-size: var(--step-1); letter-spacing: -0.01em; }
+.masthead span { color: var(--text-muted); font-size: var(--step--1); }
+
+.hero { padding: var(--space-12) 0 var(--space-8); }
+.hero h1 { font-size: var(--step-4); }
+.hero .lede { margin-top: var(--space-4); font-size: var(--step-1); color: var(--text-muted); }
+
+/* The call to action, weighted left rather than centred. */
+.get { margin-top: var(--space-8); display: flex; align-items: center; gap: var(--space-4); flex-wrap: wrap; }
+.download {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-weight: 560;
+  font-size: var(--step-0);
+  text-decoration: none;
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+.download:hover { background: color-mix(in oklab, var(--accent) 88%, black); }
+.get small { color: var(--text-muted); font-size: var(--step--1); line-height: 1.4; }
+
+/* Figures. The frame is a large surface, so 8px is permitted here. */
+figure { margin: 0; }
+figure img {
+  display: block; width: 100%; height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-md);
+}
+figcaption {
+  margin-top: var(--space-3);
+  color: var(--text-muted);
+  font-size: var(--step--1);
+  max-width: 60ch;
+}
+
+.demo { padding: var(--space-12) 0; }
+.demo h2 { font-size: var(--step-2); margin-bottom: var(--space-6); }
+
+/* The claims. Content-sized rows, not three equal cards: each is as long as it
+   needs to be, and the label column is fixed while the sentence runs on. */
+.claims { padding: var(--space-8) 0 var(--space-12); border-top: 1px solid var(--border); }
+.claims h2 { font-size: var(--step-2); margin-bottom: var(--space-8); }
+/* A second left edge. Everything above sits on one, and 00-anti-defaults.md §4
+   bans a page aligned to the same edge from top to bottom - so the list steps in
+   while its heading stays put, which reads as structure rather than decoration.
+   Collapses to nothing on a narrow screen, where an indent is only lost width. */
+.claims dl { margin-left: clamp(0px, 5vw, var(--space-16)); }
+.claim {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);   /* uneven on purpose */
+  gap: var(--space-6);
+  padding: var(--space-4) 0;
+  border-top: 1px solid var(--border);
+}
+.claim:first-of-type { border-top: 0; }
+.claim dt { font-weight: 560; }
+.claim dd { margin: 0; color: var(--text-muted); }
+
+.facts { padding: var(--space-8) 0 var(--space-16); border-top: 1px solid var(--border); }
+.facts h2 { font-size: var(--step-1); margin-bottom: var(--space-4); }
+.facts ul { margin: 0; padding-left: var(--space-6); color: var(--text-muted); max-width: 65ch; }
+.facts li { margin-bottom: var(--space-2); }
+
+footer {
+  padding: var(--space-8) 0 var(--space-16);
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: var(--step--1);
+}
+
+@media (max-width: 60rem) {
+  .page { grid-template-columns: var(--space-4) minmax(0, 1fr) var(--space-4); }
+  .page > *, .wide, .narrow { grid-column: 2 / 3; }
+  .claim { grid-template-columns: 1fr; gap: var(--space-2); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* The walkthroughs are GIFs and cannot be paused by CSS. The stills are the
+     same last frame, and <picture> in the markup swaps them. */
+  .download { transition: none; }
+}
