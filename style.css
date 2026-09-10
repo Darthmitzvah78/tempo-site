@@ -121,7 +121,10 @@ a:focus-visible, .download:focus-visible {
 .get small { color: var(--text-muted); font-size: var(--step--1); line-height: 1.4; }
 
 /* Figures. The frame is a large surface, so 8px is permitted here. */
-figure { margin: 0; }
+/* The walkthroughs are 1180px native and were filling the column, which made
+   each one about 640px tall and turned the page into a scroll. Capped well below
+   their native width: still sharp, and roughly half the vertical space. */
+figure { margin: 0; max-width: 36rem; }
 figure img {
   display: block; width: 100%; height: auto;
   border: 1px solid var(--border);
@@ -136,7 +139,9 @@ figcaption {
   max-width: 60ch;
 }
 
-.demo { padding: var(--space-12) 0; }
+/* Tighter now the figures are smaller: the generous rhythm was there to give
+   a full-width image room to breathe, and it no longer needs it. */
+.demo { padding: var(--space-8) 0; }
 .demo h2 { font-size: var(--step-2); margin-bottom: var(--space-6); }
 
 /* The claims. Content-sized rows, not three equal cards: each is as long as it
