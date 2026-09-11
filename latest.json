@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "build": 202,
-  "notes": "New here? A fresh install now offers a sample business to look around: real clients, tracked hours, invoices and expenses, with your own data untouched.",
+  "build": 204,
+  "notes": "The sample business is now reachable any time from Settings, not just on a fresh install. Look around a made-up studio with clients, hours and invoices, with your own data untouched.",
   "url": "https://tempo.jacob.fyi"
 }
