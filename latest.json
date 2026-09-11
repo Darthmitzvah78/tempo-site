@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "build": 200,
-  "notes": "The project switcher moved from \u2303\u2325S to \u2303\u2325P, because S reads as stop. \u2303\u2325T still starts and stops the timer.",
+  "build": 202,
+  "notes": "New here? A fresh install now offers a sample business to look around: real clients, tracked hours, invoices and expenses, with your own data untouched.",
   "url": "https://tempo.jacob.fyi"
 }
