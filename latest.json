@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "build": 188,
-  "notes": "First public build. Time tracking, invoicing, and a data file you own.",
+  "build": 190,
+  "notes": "The update-check switch is now set per Mac, so two Macs sharing one file no longer disagree about it.",
   "url": "https://tempo.jacob.fyi"
 }
