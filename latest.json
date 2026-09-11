@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "build": 198,
-  "notes": "Updates can now download themselves: press Download it and the disk image arrives ready to drag. Also says which build is new, rather than repeating the version you already have.",
+  "build": 200,
+  "notes": "The project switcher moved from \u2303\u2325S to \u2303\u2325P, because S reads as stop. \u2303\u2325T still starts and stops the timer.",
   "url": "https://tempo.jacob.fyi"
 }
