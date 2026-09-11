@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "build": 190,
-  "notes": "The update-check switch is now set per Mac, so two Macs sharing one file no longer disagree about it.",
+  "build": 196,
+  "notes": "Keyboard shortcuts: \u2303\u2325T starts or stops the last project, \u2303\u2325S switches. Both work from any app and can be turned off in Settings.",
   "url": "https://tempo.jacob.fyi"
 }
