@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "build": 196,
-  "notes": "Keyboard shortcuts: \u2303\u2325T starts or stops the last project, \u2303\u2325S switches. Both work from any app and can be turned off in Settings.",
+  "build": 198,
+  "notes": "Updates can now download themselves: press Download it and the disk image arrives ready to drag. Also says which build is new, rather than repeating the version you already have.",
   "url": "https://tempo.jacob.fyi"
 }
