@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "build": 204,
-  "notes": "The sample business is now reachable any time from Settings, not just on a fresh install. Look around a made-up studio with clients, hours and invoices, with your own data untouched.",
+  "build": 214,
+  "notes": "Groundwork for sharing a folder with somebody else, and a timer that knows whose it is. Nothing changes if you use Tempo on your own.",
   "url": "https://tempo.jacob.fyi"
 }
