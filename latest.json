@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "build": 216,
-  "notes": "Tempo no longer starts empty when iCloud has not delivered your data file, and will not save over it. If it opens with a warning, wait for iCloud and it comes back on its own.",
+  "build": 218,
+  "notes": "Six colour themes, in Settings. Tempo opens looking exactly as it did; pick a different one whenever you feel like it, and it stays on that Mac.",
   "url": "https://tempo.jacob.fyi"
 }
