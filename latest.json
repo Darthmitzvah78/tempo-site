@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "build": 214,
-  "notes": "Groundwork for sharing a folder with somebody else, and a timer that knows whose it is. Nothing changes if you use Tempo on your own.",
+  "build": 216,
+  "notes": "Tempo no longer starts empty when iCloud has not delivered your data file, and will not save over it. If it opens with a warning, wait for iCloud and it comes back on its own.",
   "url": "https://tempo.jacob.fyi"
 }
