@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "build": 227,
-  "notes": "Click a repeating expense's row in the list to open it, and By Category no longer splits one category typed two ways, like software and Software.",
+  "build": 229,
+  "notes": "Expense categories are a list you manage in Settings, picked rather than typed, and renaming one moves everything filed under it. Editing a repeat now asks before leaving expenses outside its dates, and a repeat made from an expense no longer copies it.",
   "url": "https://tempo.jacob.fyi"
 }
