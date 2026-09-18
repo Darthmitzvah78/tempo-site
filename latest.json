@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "build": 232,
-  "notes": "Dates are written out and chosen on a proper calendar, and times are typed the way you say them: 2pm, 14:30, 930. Repeating and By category fold away, side panels close with a button or Escape, and Settings now sits at the foot of the sidebar.",
+  "build": 235,
+  "notes": "A new icon: a simple teal stopwatch on a dark plate, the same symbol as the one in the menu bar. If the Dock still shows the old one after updating, drag Tempo out of the Dock and back in.",
   "url": "https://tempo.jacob.fyi"
 }
