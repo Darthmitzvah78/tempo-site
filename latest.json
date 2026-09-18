@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "build": 220,
-  "notes": "A second look to choose from: Layered draws panels and rows raised, with soft shadows and a catch-light along the top edge. Under Settings, beside the colour themes. Tempo still opens exactly as it did.",
+  "build": 224,
+  "notes": "Repeating expenses are easier to get right, and to undo: choose how often from four buttons with nothing picked for you, stop a repeat and delete everything it made in one press, and a single deleted repeat expense now stays deleted.",
   "url": "https://tempo.jacob.fyi"
 }
