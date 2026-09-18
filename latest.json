@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "build": 238,
-  "notes": "Expenses read as a ledger: one line each, dates down the left and amounts down the right. And a repeat made from an expense takes that expense in as one of its own, whatever dates you give it, instead of adding a copy beside it.",
+  "build": 244,
+  "notes": "Estimates: quote a client, send it itemized or as one amount, and approve it into a new or existing project, whose budget becomes the agreed figure. Plus: Make tasks now puts a note's tasks on the note's own day.",
   "url": "https://tempo.jacob.fyi"
 }
