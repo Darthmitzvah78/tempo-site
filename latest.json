@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "build": 235,
-  "notes": "A new icon: a simple teal stopwatch on a dark plate, the same symbol as the one in the menu bar. If the Dock still shows the old one after updating, drag Tempo out of the Dock and back in.",
+  "build": 238,
+  "notes": "Expenses read as a ledger: one line each, dates down the left and amounts down the right. And a repeat made from an expense takes that expense in as one of its own, whatever dates you give it, instead of adding a copy beside it.",
   "url": "https://tempo.jacob.fyi"
 }
