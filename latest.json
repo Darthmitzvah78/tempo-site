@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "build": 244,
-  "notes": "Estimates: quote a client, send it itemized or as one amount, and approve it into a new or existing project, whose budget becomes the agreed figure. Plus: Make tasks now puts a note's tasks on the note's own day.",
+  "build": 246,
+  "notes": "Invoices can now go to the client as one amount instead of an itemized list. The lines and the time they bill stay on the invoice for your own records.",
   "url": "https://tempo.jacob.fyi"
 }
