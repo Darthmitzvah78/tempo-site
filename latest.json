@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "build": 246,
-  "notes": "Invoices can now go to the client as one amount instead of an itemized list. The lines and the time they bill stay on the invoice for your own records.",
+  "build": 249,
+  "notes": "Archiving a project or a client keeps you on the list you were looking at, with a note saying where it went, instead of jumping to Archived each time.",
   "url": "https://tempo.jacob.fyi"
 }
