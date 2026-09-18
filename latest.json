@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "build": 224,
-  "notes": "Repeating expenses are easier to get right, and to undo: choose how often from four buttons with nothing picked for you, stop a repeat and delete everything it made in one press, and a single deleted repeat expense now stays deleted.",
+  "build": 227,
+  "notes": "Click a repeating expense's row in the list to open it, and By Category no longer splits one category typed two ways, like software and Software.",
   "url": "https://tempo.jacob.fyi"
 }
