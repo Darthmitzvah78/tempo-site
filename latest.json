@@ -1,6 +1,7 @@
 {
   "version": "1.0",
-  "build": 249,
-  "notes": "Archiving a project or a client keeps you on the list you were looking at, with a note saying where it went, instead of jumping to Archived each time.",
-  "url": "https://tempo.jacob.fyi"
+  "build": 251,
+  "notes": "No change to the app itself. The download moved to a GitHub release, which is the only way to tell whether anyone has downloaded it: a count of requests, and nothing about who asked.",
+  "url": "https://tempo.jacob.fyi",
+  "dmg": "https://github.com/Darthmitzvah78/tempo-site/releases/download/build-251/Tempo.dmg"
 }
