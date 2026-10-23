@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "build": 251,
-  "notes": "No change to the app itself. The download moved to a GitHub release, which is the only way to tell whether anyone has downloaded it: a count of requests, and nothing about who asked.",
+  "build": 255,
+  "notes": "Dragging a project onto another day works when that day's tasks are all ticked off: it used to do nothing at all. A drop also leaves a line saying where the thing went, since the day you are looking at does not change.",
   "url": "https://tempo.jacob.fyi",
-  "dmg": "https://github.com/Darthmitzvah78/tempo-site/releases/download/build-251/Tempo.dmg"
+  "dmg": "https://github.com/Darthmitzvah78/tempo-site/releases/download/build-255/Tempo.dmg"
 }
