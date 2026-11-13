@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "build": 255,
-  "notes": "Dragging a project onto another day works when that day's tasks are all ticked off: it used to do nothing at all. A drop also leaves a line saying where the thing went, since the day you are looking at does not change.",
+  "build": 259,
+  "notes": "Typing a time into a timesheet entry now takes, however you leave the field: it used to be thrown away unless you pressed Return. The time sits beside the date instead of inside the calendar, and the duration can be typed - 1h 30m - with the end time following.",
   "url": "https://tempo.jacob.fyi",
-  "dmg": "https://github.com/Darthmitzvah78/tempo-site/releases/download/build-255/Tempo.dmg"
+  "dmg": "https://github.com/Darthmitzvah78/tempo-site/releases/download/build-259/Tempo.dmg"
 }
